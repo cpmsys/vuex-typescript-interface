@@ -1,6 +1,6 @@
 import _Vue, { WatchOptions } from "vue";
 
-import "./vue";
+//import "./vue";
 
 /**
  * When and if https://github.com/Microsoft/TypeScript/issues/12754 is
