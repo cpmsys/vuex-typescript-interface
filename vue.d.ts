@@ -1,7 +1,7 @@
 /**
  * Extends interfaces in Vue.js
  */
-
+/*
 import Vue, { ComponentOptions } from 'vue';
 import { Store } from './index';
 
@@ -24,3 +24,4 @@ declare module "vue/types/vue"
   }
 
 }
+*/
