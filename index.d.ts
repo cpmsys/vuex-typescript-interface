@@ -179,10 +179,9 @@ export type MutationTree<T> = {
     : never
 };
 
-export type ActionHandler<T, R, P, X> = (
-  injectee: ActionContext<T, R>,
-  payload: P
-) => Promise<X>;
+export interface ActionHandler<T, R, P, X> {
+  (this: Store<T>, injectee: ActionContext<T, R>, payload: P): Promise<X>;
+}
 
 export type ActionTree<T, R = T> = {
   [K in ActionKeys<T>]: T[K] extends Action<infer P, infer X>
